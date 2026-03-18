@@ -1,7 +1,4 @@
----
-layout: default
-title: Recipe Analysis
----
+
 # dsc80-recipe-analysis
 
 # What Makes a Recipe Highly Rated?
