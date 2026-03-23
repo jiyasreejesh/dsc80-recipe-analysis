@@ -86,7 +86,7 @@ We grouped recipes by ingredient count and computed average ratings. The results
 - **6–10 ingredients:** 4.62 (40,373 recipes)  
 - **11–15 ingredients:** 4.62 (22,103 recipes)  
 - **16–20 ingredients:** 4.63 (4,333 recipes)  
-- **20+ ingredients:** 4.70 (645 recipes) :contentReference[oaicite:0]{index=0}  
+- **20+ ingredients:** 4.70 (645 recipes) 
 
 While recipes with **20+ ingredients** have the highest average rating (4.70), this group contains significantly fewer recipes, making it less reliable.
 
@@ -100,8 +100,7 @@ The primary missing values occur in the `avg_rating` column, representing recipe
 
 We conducted a permutation test to determine whether missingness depends on the number of ingredients.
 
-- **P-value = 0.001** :contentReference[oaicite:1]{index=1}  
-
+- **P-value = 0.001** 
 Since the p-value is **less than 0.05**, we reject the null hypothesis.
 
 Conclusion:  
@@ -123,7 +122,7 @@ We tested whether recipes with more than 10 ingredients have different rating di
 
 **Results:**
 - **KS Statistic = 0.0057**
-- **P-value = 0.5912** :contentReference[oaicite:2]{index=2}  
+- **P-value = 0.5912** 
 
 Since the p-value is **greater than 0.05**, we fail to reject the null hypothesis.
 
@@ -156,7 +155,7 @@ We trained a **Linear Regression model** using:
 Both features were standardized.
 
 **Performance:**
-- **Test RMSE = 0.636** :contentReference[oaicite:3]{index=3}  
+- **Test RMSE = 0.636**  
 
 This means predictions are off by about **0.64 rating points on average**, which is relatively large given that ratings range from 1 to 5.
 
@@ -171,7 +170,7 @@ We improved the model by adding:
 We also used **GridSearchCV** to tune hyperparameters.
 
 **Performance:**
-- **Final RMSE = 0.631** :contentReference[oaicite:4]{index=4}  
+- **Final RMSE = 0.631**  
 - Improvement ≈ **0.005**
 
 While the improvement is small, it shows that incorporating additional structural features provides **marginal gains**.
@@ -189,7 +188,7 @@ We evaluated model performance across:
 **Results:**
 - RMSE (simple) = **0.638**  
 - RMSE (complex) = **0.617**  
-- **P-value = 0.562** :contentReference[oaicite:5]{index=5}  
+- **P-value = 0.562**  
 
 Since the p-value is **greater than 0.05**, we fail to reject the null hypothesis.
 
