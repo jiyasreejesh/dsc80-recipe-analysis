@@ -175,6 +175,7 @@ We also used **GridSearchCV** to tune hyperparameters.
 
 While the improvement is small, it shows that incorporating additional structural features provides **marginal gains**.
 
+
 This limited improvement suggests that ratings are inherently difficult to predict due to their **subjective nature**.
 
 ---
